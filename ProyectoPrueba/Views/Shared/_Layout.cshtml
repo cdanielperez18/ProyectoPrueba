@@ -27,14 +27,13 @@
     <!-- Nombre del sitio para Open Graph -->
     <link rel="canonical" href="http://Index.html" />
     <!-- Enlace canónico -->
-    <link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
+    @* <link rel="shortcut icon" href="assets/media/logos/favicon.ico" /> *@
     <!-- Icono de la página -->
     <!-- Inicio de la carga de fuentes -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
     <!-- Fuentes utilizadas en la página -->
     <!-- Fin de la carga de fuentes -->
     <!-- Estilos de proveedores utilizados solo para esta página -->
-
     @* <link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
     <link href="assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" /> *@
 
@@ -45,7 +44,7 @@
     <!-- Estilos de la aplicación -->
     <link href="~/css/style.bundle.css" rel="stylesheet" type="text/css" />
     @* Estilos personaiizados *@
-    <link href="~/css/site.css" rel="stylesheet" type="text/css"/>
+    <link href="~/css/site.css" rel="stylesheet" type="text/css" />
     <!-- Fin del paquete de estilos globales -->
     <!-- Script para evitar cargar el sitio dentro de un marco sin permiso (clickjacking) -->
     <script>
@@ -63,7 +62,6 @@
       data-kt-app-sidebar-push-footer="true" data-kt-app-sidebar-stacked="true"
       data-kt-app-sidebar-secondary-enabled="true" class="app-default">
     <!-- Cuerpo de la aplicación con configuraciones -->
-
     <!-- Script para configurar el modo de tema al cargar la página -->
     <script>
         var defaultThemeMode = "light"; // Modo de tema predeterminado
@@ -85,16 +83,15 @@
         }
     </script>
     <!-- Fin de la configuración del modo de tema al cargar la página -->
-
     <!-- Contenedor principal de la aplicación -->
     <div class="d-flex flex-column flex-root app-root" id="kt_app_root">
 
         <!-- Página de la aplicación -->
         <div class="app-page flex-column flex-column-fluid" id="kt_app_page">
-            
-            
+
+
             <!-- Cabecera de la aplicación -->
-            <div id="kt_app_header" class="app-header bg-personalizado">
+            <div id="kt_app_header" class="app-header bg-personalizado" style="border:none">
                 <!-- Contenedor de la cabecera -->
                 <div class="app-container container-fluid d-flex align-items-stretch justify-content-between"
                      id="kt_app_header_container">
@@ -113,7 +110,6 @@
                         <!-- Fin de la imagen del logo -->
                     </div>
                     <!-- Fin del logo de la cabecera -->
-
                     <!-- Envoltorio de la cabecera -->
                     <div class="d-flex align-items-stretch justify-content-between flex-lg-grow-1">
                         <!-- Envoltorio del menú -->
@@ -169,8 +165,6 @@
                                 </div>
                             </div>
                             <!-- Fin del alternador de modo -->
-
-
                             <!-- Notificaciones -->
                             <div class="app-navbar-item ms-3 ms-md-6">
                                 <!-- Envoltorio del menú -->
@@ -253,8 +247,6 @@
                                 <!-- Fin de menú de notificaciones -->
                             </div>
                             <!-- Fin de notificaciones -->
-
-
                             <!-- Menú de usuario -->
                             <div class="app-navbar-item ms-3 ms-md-6" id="kt_header_user_menu_toggle">
                                 <!-- Envoltorio del menú -->
@@ -293,17 +285,17 @@
                                     <div class="separator my-2"></div>
                                     <!-- Elemento de menú - Perfil -->
                                     <div class="menu-item px-5">
-                                        <a href="account/overview.html" class="menu-link px-5">Mi Perfil</a>
+                                        <a href="#" class="menu-link px-5">Mi Perfil</a>
                                     </div>
                                     <!-- Separador de menú -->
                                     <div class="separator my-2"></div>
                                     <!-- Elemento de menú - Configuración de cuenta -->
                                     <div class="menu-item px-5 my-1">
-                                        <a href="account/settings.html" class="menu-link px-5">Configuración de la Cuenta</a>
+                                        <a href="#" class="menu-link px-5">Configuración de la Cuenta</a>
                                     </div>
                                     <!-- Elemento de menú - Cerrar sesión -->
                                     <div class="menu-item px-5">
-                                        <a href="authentication/layouts/corporate/sign-in.html"
+                                        <a href="#"
                                            class="menu-link px-5">Cerrar Sesión</a>
                                     </div>
                                     <!-- Fin del elemento de menú -->
@@ -320,12 +312,8 @@
                 <!--end::Header container-->
             </div>
             <!--Fin ::Cabecera-->
-
-
             <!-- Envoltorio -->
             <div class="app-wrapper flex-column flex-row-fluid" id="kt_app_wrapper">
-
-
                 <!-- Barra lateral -->
                 <div id="kt_app_sidebar" class="app-sidebar" data-kt-drawer="true" data-kt-drawer-name="app-sidebar"
                      data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true"
@@ -333,8 +321,9 @@
                      data-kt-drawer-toggle="#kt_app_sidebar_mobile_toggle">
                     <!-- Barra lateral primaria -->
                     <div class="app-sidebar-primary bg-personalizado">
+
                         <!-- Navbar de la barra lateral -->
-                        <div class="app-sidebar-nav flex-grow-1 px-4 pt-2"
+                        <div class="app-sidebar-nav flex-grow-1 hover-scroll-y px-4 pt-2"
                              id="kt_app_sidebar_primary_nav" data-kt-scroll="true" data-kt-scroll-height="auto"
                              data-kt-scroll-dependencies="#kt_app_header, #kt_app_sidebar_primary_header, #kt_app_sidebar_primary_footer"
                              data-kt-scroll-wrappers="#kt_app_content, #kt_app_sidebar_primary_nav"
@@ -393,6 +382,16 @@
                                     <!-- Fin del enlace de la barra de navegación -->
                                 </li>
                                 <!-- Fin del elemento de la barra de navegación -->
+                                <li class="nav-item py-1">
+                                    <!-- Enlace de la barra de navegación - Cerrar Sesión -->
+                                    <a data-bs-toggle="tab" href="#kt_app_sidebar_secondary_notifications"
+                                       class="nav-link py-4 px-1 btn">
+                                        <i class="ki-outline ki-exit-right fs-1"></i>
+                                        <span class="pt-2 fs-9 fs-lg-7 fw-bold">Cerrar Sesión</span>
+                                    </a>
+                                    <!-- Fin del enlace de la barra de navegación -->
+                                </li>
+
                             </ul>
                             <!-- Fin de la navegación -->
                         </div>
@@ -401,7 +400,80 @@
                     <!-- Fin de la barra lateral primaria -->
                 </div>
                 <!-- Fin de la barra lateral -->
+                @* <!-- Barra lateral -->
+                <div id="kt_app_sidebar" class="app-sidebar" data-kt-drawer="true" data-kt-drawer-name="app-sidebar"
+                data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true"
+                data-kt-drawer-width="auto" data-kt-drawer-direction="start"
+                data-kt-drawer-toggle="#kt_app_sidebar_mobile_toggle">
+                <!-- Barra lateral primaria -->
+                <div class="app-sidebar-primary d-flex bg-personalizado">
+                <!-- Navbar de la barra lateral -->
+                <div class="app-sidebar-nav d-flex flex-grow-1 px-4 pt-2 scroll-ms"
+                id="kt_app_sidebar_primary_nav" data-kt-scroll="true" data-kt-scroll-height="auto"
+                data-kt-scroll-dependencies="#kt_app_header, #kt_app_sidebar_primary_header, #kt_app_sidebar_primary_footer"
+                data-kt-scroll-wrappers="#kt_app_content, #kt_app_sidebar_primary_nav"
+                data-kt-scroll-offset="5px" style="border:none;">
+                <!-- Navegación -->
+                <ul class="nav">
+                <!-- Elemento de la barra de navegación - Inicio -->
+                <li class="nav-item py-1">
+                <a asp-controller="Home" asp-action="Index" class="nav-link py-4 px-1 btn active">
+                <i class="ki-outline ki-home fs-1"></i>
+                <span class="pt-2 fs-9 fs-lg-7 fw-bold">Inicio</span>
+                </a>
+                </li>
+                <!-- Fin del elemento de la barra de navegación - Inicio -->
+                <!-- Elemento de la barra de navegación - Dashboard -->
+                <li class="nav-item py-1">
+                <a href="#" class="nav-link py-4 px-1 btn">
+                <i class="ki-outline ki-chart-simple-3 fs-1"></i>
+                <span class="pt-2 fs-9 fs-lg-7 fw-bold">Dashboard</span>
+                </a>
+                </li>
+                <!-- Fin del elemento de la barra de navegación - Dashboard -->
+                <!-- Elemento de la barra de navegación - Perfil -->
+                <li class="nav-item py-1">
+                <a href="#" class="nav-link py-4 px-1 btn">
+                <i class="ki-outline ki-profile-circle fs-1"></i>
+                <span class="pt-2 fs-9 fs-lg-7 fw-bold">Perfil</span>
+                </a>
+                </li>
+                <!-- Fin del elemento de la barra de navegación - Perfil -->
+                <!-- Elemento de la barra de navegación - Configuración -->
+                <li class="nav-item py-1">
+                <a href="#"
+                class="nav-link py-4 px-1 btn">
+                <i class="ki-outline ki-setting-2 fs-1"></i>
+                <span class="pt-2 fs-9 fs-lg-7 fw-bold">Configuración</span>
+                </a>
 
+                </li>
+                <!-- Fin del elemento de la barra de navegación - Configuración -->
+                <!-- Elemento de la barra de navegación - Cerrar Sesión -->
+                <li class="nav-item py-1">
+                <a href="#"
+                class="nav-link py-4 px-1 btn">
+                <i class="ki-outline ki-exit-right fs-1"></i>
+                <span class="pt-2 fs-9 fs-lg-7 fw-bold">Cerrar Sesión</span>
+                </a>
+                </li>
+                <!-- Fin del elemento de la barra de navegación - Cerrar Sesión -->
+                <li class="nav-item py-1">
+                <a href="#"
+                class="nav-link py-4 px-1 btn">
+                <i class="ki-outline ki-exit-right fs-1"></i>
+                <span class="pt-2 fs-9 fs-lg-7 fw-bold">Cerrar Sesión</span>
+                </a>
+                </li>
+                </ul>
+                <!-- Fin de la navegación -->
+                </div>
+                <!-- Fin del contenedor para centrar verticalmente -->
+                </div>
+                <!-- Fin de la barra lateral primaria -->
+
+                </div>
+                <!-- Fin de la barra lateral --> *@
 
 
                 <!-- Inicio Main donde se conecta con las otras vistas -->
@@ -430,80 +502,69 @@
 
         </div>
         <!--end::Page-->
+        <!--begin::Footer-->
+        <footer class="footer text-muted bg-personalizado" style="z-index:100">
 
-    </div>
+            <div id="kt_app_footer" class="container app-footer">
+                <!--begin::Footer container-->
+                <div class="app-container container-fluid d-flex flex-column flex-md-row flex-center flex-md-stack py-3">
+                    <!--begin::Copyright-->
+                    <div class="text-gray-900 order-2 order-md-1">
+                        <span class="text-muted fw-semibold me-1">Copyright 2024&copy;</span>
+                        <a href="https://www.apl.com.co/" target="_blank"
+                           class="text-gray-800 text-hover-white">,Grupo APL Ingeniería LTDA</a>
+                    </div>
+                    <!--end::Copyright-->
+                    <!--begin::Menu-->
+                    <ul class="menu menu-gray-600 menu-hover-primary fw-semibold order-1">
+                        <li class="menu-item">
+                            <a href="https://www.apl.com.co/contacto/" target="_blank" class="menu-link px-2">Contacto</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="https://www.apl.com.co/soporte-tecnico/" target="_blank"
+                               class="menu-link px-2">Soporte</a>
+                        </li>
+                    </ul>
+                    <!--end::Menu-->
 
-
-    <!--begin::Footer-->
-    <footer class="border-top footer text-muted bg-personalizado">
-
-        <div id="kt_app_footer" class="container app-footer">
-            <!--begin::Footer container-->
-            <div class="app-container container-fluid d-flex flex-column flex-md-row flex-center flex-md-stack py-3">
-                <!--begin::Copyright-->
-                <div class="text-gray-900 order-2 order-md-1">
-                    <span class="text-muted fw-semibold me-1">2024&copy;</span>
-                    <a href="https://keenthemes.com" target="_blank"
-                       class="text-gray-800 text-hover-primary">Keenthemes</a>
                 </div>
-                <!--end::Copyright-->
-
-                <!--begin::Menu-->
-                <ul class="menu menu-gray-600 menu-hover-primary fw-semibold order-1">
-                    <li class="menu-item">
-                        <a href="https://keenthemes.com" target="_blank" class="menu-link px-2">About</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="https://devs.keenthemes.com" target="_blank"
-                           class="menu-link px-2">Support</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="https://1.envato.market/EA4JP" target="_blank"
-                           class="menu-link px-2">Purchase</a>
-                    </li>
-                </ul>
-                <!--end::Menu-->
-
+                <!--end::Footer container-->
             </div>
-            <!--end::Footer container-->
-        </div>
 
-    </footer>
-    <!--end::Footer-->
-
-
-    <!--begin::Javascript-->
-    <script>var hostUrl = "assets/";</script>
-    <!--begin::Global Javascript Bundle(mandatory for all pages)-->
-    <script src="assets/plugins/global/plugins.bundle.js"></script>
-    <script src="assets/js/scripts.bundle.js"></script>
-    <!--end::Global Javascript Bundle-->
-    <!--begin::Vendors Javascript(used for this page only)-->
-    <script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/radar.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/geodata/continentsLow.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/geodata/usaLow.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZonesLow.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZoneAreasLow.js"></script>
-    <script src="assets/plugins/custom/datatables/datatables.bundle.js"></script>
-    <!--end::Vendors Javascript-->
-    <!--begin::Custom Javascript(used for this page only)-->
-    <script src="assets/js/widgets.bundle.js"></script>
-    <script src="assets/js/custom/widgets.js"></script>
-    <script src="assets/js/custom/apps/chat/chat.js"></script>
-    <script src="assets/js/custom/utilities/modals/upgrade-plan.js"></script>
-    <script src="assets/js/custom/utilities/modals/new-target.js"></script>
-    <script src="assets/js/custom/utilities/modals/new-address.js"></script>
-    <script src="assets/js/custom/utilities/modals/users-search.js"></script>
-    <!--end::Custom Javascript-->
-    @await RenderSectionAsync("Scripts", required: false)
-    <!--end::Javascript-->
+        </footer>
+        <!--end::Footer-->
+        <!--begin::Javascript-->
+        <script>var hostUrl = "assets/";</script>
+        <!--begin::Global Javascript Bundle(mandatory for all pages)-->
+        <script src="~/js/plugins.bundle.js"></script>
+        <script src="~/js/scripts.bundle.js"></script>
+        <!--end::Global Javascript Bundle-->
+        <!--begin::Vendors Javascript(used for this page only)-->
+        @* <script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script> *@
+        <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+        <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+        <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+        <script src="https://cdn.amcharts.com/lib/5/radar.js"></script>
+        <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+        <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+        <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+        <script src="https://cdn.amcharts.com/lib/5/geodata/continentsLow.js"></script>
+        <script src="https://cdn.amcharts.com/lib/5/geodata/usaLow.js"></script>
+        <script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZonesLow.js"></script>
+        <script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZoneAreasLow.js"></script>
+        @* <script src="assets/plugins/custom/datatables/datatables.bundle.js"></script> *@
+        <!--end::Vendors Javascript-->
+        <!--begin::Custom Javascript(used for this page only)-->
+        @*     <script src="assets/js/widgets.bundle.js"></script>
+        <script src="assets/js/custom/widgets.js"></script>
+        <script src="assets/js/custom/apps/chat/chat.js"></script>
+        <script src="assets/js/custom/utilities/modals/upgrade-plan.js"></script>
+        <script src="assets/js/custom/utilities/modals/new-target.js"></script>
+        <script src="assets/js/custom/utilities/modals/new-address.js"></script>
+        <script src="assets/js/custom/utilities/modals/users-search.js"></script> *@
+        <!--end::Custom Javascript-->
+        @await RenderSectionAsync("Scripts", required: false)
+        <!--end::Javascript-->
 </body>
 <!--end::Body-->
 </html>

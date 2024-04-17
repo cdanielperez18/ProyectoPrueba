@@ -186,7 +186,7 @@
 *,
 ::after,
 ::before {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 body {
@@ -55065,8 +55065,8 @@ code:not([class*=language-]).code-dark {
     overflow: auto;
     z-index: 110;
     position: fixed;
-    top: 0;
-    bottom: 0;
+    top: 0px;
+    bottom: 0px;
     background-color: var(--bs-drawer-bg-color);
     transition: transform .3s ease-in-out !important
 }
@@ -60838,7 +60838,7 @@ body {
     .app-sidebar {
         display: none;
         width: var(--bs-app-sidebar-width);
-        z-index: 106;
+        z-index: 90;
         margin-left: 0;
         margin-right: 0;
         margin-top: 0;
@@ -62066,8 +62066,8 @@ body {
 
 @media (max-width:991.98px) {
     .app-sidebar {
-        padding-top: 20px;
-        padding-bottom: 20px
+        padding-top: 0px;
+        padding-bottom: 0px
     }
 }
 
