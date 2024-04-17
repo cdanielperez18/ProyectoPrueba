@@ -61926,8 +61926,8 @@ body {
 }
 
 .app-sidebar {
-    padding-top: 30px;
-    padding-bottom: 30px
+    padding-top: 0px;
+    padding-bottom: 0px
 }
 
 .app-sidebar .separator {
