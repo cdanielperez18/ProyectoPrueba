@@ -35,14 +35,18 @@
     <!-- Fuentes utilizadas en la página -->
     <!-- Fin de la carga de fuentes -->
     <!-- Estilos de proveedores utilizados solo para esta página -->
-    <link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+
+    @* <link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" /> *@
+
     <!-- Fin de los estilos de proveedores -->
     <!-- Inicio del paquete de estilos globales obligatorio para todas las páginas -->
-    <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/plugins.bundle.css" rel="stylesheet" type="text/css" />
     <!-- Estilos globales utilizados en todas las páginas -->
     <!-- Estilos de la aplicación -->
     <link href="~/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    @* Estilos personaiizados *@
+    <link href="~/css/site.css" rel="stylesheet" type="text/css"/>
     <!-- Fin del paquete de estilos globales -->
     <!-- Script para evitar cargar el sitio dentro de un marco sin permiso (clickjacking) -->
     <script>
@@ -52,6 +56,7 @@
         }
     </script>
 </head>
+
 <!-- Fin de la cabecera -->
 <!-- Cuerpo del documento HTML -->
 <body id="kt_app_body" data-kt-app-header-fixed="true" data-kt-app-header-fixed-mobile="true"
@@ -59,6 +64,7 @@
       data-kt-app-sidebar-push-footer="true" data-kt-app-sidebar-stacked="true"
       data-kt-app-sidebar-secondary-enabled="true" class="app-default">
     <!-- Cuerpo de la aplicación con configuraciones -->
+
     <!-- Script para configurar el modo de tema al cargar la página -->
     <script>
         var defaultThemeMode = "light"; // Modo de tema predeterminado
@@ -103,7 +109,7 @@
                         <!-- Fin del alternador de móvil -->
                         <!-- Imagen del logo -->
                         <a href="Index.html">
-                            <img alt="Logo" src="assets/media/logos/logo.png" class="h-30px" />
+                            <img alt="Logo" src="~/img/logo.png" class="w-100px" />
                         </a>
                         <!-- Fin de la imagen del logo -->
                     </div>
