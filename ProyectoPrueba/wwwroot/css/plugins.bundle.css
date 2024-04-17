@@ -18778,8 +18778,8 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-right {
 
 @font-face {
     font-family: keenicons-outline;
-    src: url(fonts/keenicons/keenicons-outline.eot?fzo4bm);
-    src: url(fonts/keenicons/keenicons-outline.eot?fzo4bm#iefix) format("embedded-opentype"), url(fonts/keenicons/keenicons-outline.ttf?fzo4bm) format("truetype"), url(fonts/keenicons/keenicons-outline.woff?fzo4bm) format("woff"), url(fonts/keenicons/keenicons-outline.svg?fzo4bm#keenicons-outline) format("svg");
+    src: url(../fontsicons/keenicons-outline.eot?fzo4bm);
+    src: url(../fontsicons/keenicons-outline.eot?fzo4bm#iefix) format("embedded-opentype"), url(../fontsicons/keenicons-outline.ttf?fzo4bm) format("truetype"), url(../fontsicons/keenicons-outline.woff?fzo4bm) format("woff"), url(../fontsicons/keenicons-outline.svg?fzo4bm#keenicons-outline) format("svg");
     font-weight: 400;
     font-style: normal;
     font-display: block
