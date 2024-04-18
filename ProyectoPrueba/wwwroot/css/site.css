@@ -16,3 +16,11 @@
     border:none;
 }
 
+
+/* Login */
+@media (min-width: 992px) {
+    .border-lg-right-radius {
+        border-top-right-radius: 20%;
+        border-bottom-right-radius: 20%;
+    }
+}

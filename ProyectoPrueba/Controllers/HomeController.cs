@@ -48,6 +48,7 @@ namespace ProyectoPrueba.Controllers
             return View();
         }
 
+
         public IActionResult Privacy()
         {
             return View();
