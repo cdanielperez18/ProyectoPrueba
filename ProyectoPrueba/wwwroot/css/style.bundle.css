@@ -60841,8 +60841,8 @@ body {
         z-index: 90;
         margin-left: 0;
         margin-right: 0;
-        margin-top: 0;
-        margin-bottom: 0
+        margin-top: 70px;
+        margin-bottom: 55px
     }
 
     :root {
@@ -60938,7 +60938,7 @@ body {
         margin-left: 0;
         margin-right: 0;
         margin-top: 0;
-        margin-bottom: 0
+        margin-bottom: 0px
     }
 
     :root {
@@ -61486,7 +61486,7 @@ body {
         display: flex !important
     }
 
-    [data-kt-app-sidebar-panel-collapse-mobile=on] .app-sidebar-panel-collapse-mobile-d-none {
+    [data-kt-app-sidebar-panel-collapse-mobile=on] .app-sidebar-pan.app-sidebar-primary .app-sidebar-navel-collapse-mobile-d-none {
         display: none !important
     }
 
