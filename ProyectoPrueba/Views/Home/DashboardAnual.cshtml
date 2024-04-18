@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Dashboard Anual";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Este es el Dashboard Anual</p>
+
+
+<div>
+    <a asp-controller="Home" asp-action="Dashboard">Total</a>
+    <a asp-controller="Home" asp-action="DashboardSemanal">Semanal</a>
+    <a asp-controller="Home" asp-action="DashboardMensual">Mensual</a>
+    <a asp-controller="Home" asp-action="DashboardAnual">Anual</a>
+</div>

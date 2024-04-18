@@ -18,6 +18,36 @@ namespace ProyectoPrueba.Controllers
             return View();
         }
 
+        public IActionResult Configuración()
+        {
+            return View();
+        }
+
+        public IActionResult Dashboard()
+        {
+            return View();
+        }
+
+        public IActionResult DashboardAnual()
+        {
+            return View();
+        }
+
+        public IActionResult DashboardMensual()
+        {
+            return View();
+        }
+
+        public IActionResult DashboardSemanal()
+        {
+            return View();
+        }
+
+        public IActionResult Perfil()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

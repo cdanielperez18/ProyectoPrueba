@@ -285,13 +285,13 @@
                                     <div class="separator my-2"></div>
                                     <!-- Elemento de menú - Perfil -->
                                     <div class="menu-item px-5">
-                                        <a href="#" class="menu-link px-5">Mi Perfil</a>
+                                        <a asp-controller="Home" asp-action="Perfil" class="menu-link px-5">Mi Perfil</a>
                                     </div>
                                     <!-- Separador de menú -->
                                     <div class="separator my-2"></div>
                                     <!-- Elemento de menú - Configuración de cuenta -->
                                     <div class="menu-item px-5 my-1">
-                                        <a href="#" class="menu-link px-5">Configuración de la Cuenta</a>
+                                        <a asp-controller="Home" asp-action="Configuración" class="menu-link px-5">Configuración de la Cuenta</a>
                                     </div>
                                     <!-- Elemento de menú - Cerrar sesión -->
                                     <div class="menu-item px-5">
@@ -333,7 +333,7 @@
                                 <!-- Elemento de la barra de navegación -->
                                 <li class="nav-item py-1">
                                     <!-- Enlace de la barra de navegación - Inicio -->
-                                    <a href="Index.html" class="nav-link py-4 px-1 btn active">
+                                    <a asp-controller="Home" asp-action="Index" class="nav-link py-4 px-1 btn active">
                                         <i class="ki-outline ki-home fs-1"></i>
                                         <span class="pt-2 fs-9 fs-lg-7 fw-bold">Inicio</span>
                                     </a>
@@ -343,7 +343,7 @@
                                 <!-- Elemento de la barra de navegación -->
                                 <li class="nav-item py-1">
                                     <!-- Enlace de la barra de navegación - Dashboard -->
-                                    <a href="dashboard.html" class="nav-link py-4 px-1 btn">
+                                    <a asp-controller="Home" asp-action="Dashboard" class="nav-link py-4 px-1 btn">
                                         <i class="ki-outline ki-chart-simple-3 fs-1"></i>
                                         <span class="pt-2 fs-9 fs-lg-7 fw-bold">Dashboard</span>
                                     </a>
@@ -353,7 +353,7 @@
                                 <!-- Elemento de la barra de navegación -->
                                 <li class="nav-item py-1">
                                     <!-- Enlace de la barra de navegación - Perfil -->
-                                    <a href="account/overview.html" class="nav-link py-4 px-1 btn">
+                                    <a hasp-controller="Home" asp-action="Perfil" class="nav-link py-4 px-1 btn">
                                         <i class="ki-outline ki-profile-circle fs-1"></i>
                                         <span class="pt-2 fs-9 fs-lg-7 fw-bold">Perfil</span>
                                     </a>
@@ -363,7 +363,7 @@
                                 <!-- Elemento de la barra de navegación -->
                                 <li class="nav-item py-1">
                                     <!-- Enlace de la barra de navegación - Configuración -->
-                                    <a data-bs-toggle="tab" href="#kt_app_sidebar_secondary_servers"
+                                    <a asp-controller="Home" asp-action="Configuración"
                                        class="nav-link py-4 px-1 btn">
                                         <i class="ki-outline ki-setting-2 fs-1"></i>
                                         <span class="pt-2 fs-9 fs-lg-7 fw-bold">Configuración</span>
@@ -374,7 +374,7 @@
                                 <!-- Elemento de la barra de navegación -->
                                 <li class="nav-item py-1">
                                     <!-- Enlace de la barra de navegación - Cerrar Sesión -->
-                                    <a data-bs-toggle="tab" href="#kt_app_sidebar_secondary_notifications"
+                                    <a href="#"
                                        class="nav-link py-4 px-1 btn">
                                         <i class="ki-outline ki-exit-right fs-1"></i>
                                         <span class="pt-2 fs-9 fs-lg-7 fw-bold">Cerrar Sesión</span>
