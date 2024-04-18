@@ -3,3 +3,16 @@
 .bg-personalizado {
     background-color: #092F60;
 }
+
+@media (min-width: 992px) {
+    .hover-scroll-y {
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+}
+
+.app-sidebar-primary .app-sidebar-nav {
+    border:none;
+}
+
