@@ -1,14 +1,19 @@
 ﻿@{
     ViewData["Title"] = "Dashboard Mensual";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Este es el Dashboard Mensual</p>
+@{
+    await Html.RenderPartialAsync("_MenuPartialDashboard");
+}
 
+@{
+    await Html.RenderPartialAsync("_TarjetasDashboard");
+}
 
-<div>
-    <a asp-controller="Home" asp-action="Dashboard">Total</a>
-    <a asp-controller="Home" asp-action="DashboardSemanal">Semanal</a>
-    <a asp-controller="Home" asp-action="DashboardMensual">Mensual</a>
-    <a asp-controller="Home" asp-action="DashboardAnual">Anual</a>
-</div>
+@{
+    await Html.RenderPartialAsync("_GraficosDashboard");
+}
+
+@{
+    await Html.RenderPartialAsync("_TablasDashboard");
+}
