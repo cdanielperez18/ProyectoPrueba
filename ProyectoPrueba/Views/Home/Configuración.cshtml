@@ -1,6 +1,58 @@
 ﻿@{
     ViewData["Title"] = "Configuración";
 }
-<h2>@ViewData["Title"]</h2>
 
-<p>Esta es la configuración</p>
+<div class="row m-0">
+    <div class="card py-4">
+        <div>
+            <h1>@ViewData["Title"]</h1>
+        </div>
+        <div class="col-10 m-auto">
+            <div class="mb-4">
+                <div class="d-flex justify-content-between" style="background-color: #f1f5f7">
+                    <h2 class="my-2">Modo Nocturno</h2>
+                    <div>
+                        <i class="ki-outline ki-moon fs-2"></i>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <h2 class="my-2">Notificaciones</h2>
+                    <div>
+                        <i class="ki-outline ki-notification-on fs-1"></i>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between" style="background-color: #f1f5f7">
+                    <h2 class="my-2">Generar Último Informe</h2>
+                    <i class="ki-outline ki-file-down fs-1"></i>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <h2 class="my-2">Versión del Sistema</h2>
+                    <div>
+                        <p class="my-2">1.0.0</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between" style="background-color: #f1f5f7">
+                    <h2 class="my-2">Próxima Actualización</h2>
+                    <div>
+                        <p class="my-2">Próxima actualización: 15 de mayo de 2024</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="comment-section">
+                    <h2>Comentarios y Soporte Técnico</h2>
+                    <div class="comment-option col-sm-12 col-lg-8 mx-auto">
+                        <div class="mb-3">
+                            <textarea class="form-control h-150px" placeholder="Escribe tus comentarios aquí..."></textarea>
+                        </div>
+                        <div class="text-end">
+                            <button type="submit" class="btn" style="background-color: #092F60;">
+                                <span class="text-white">Enviar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
