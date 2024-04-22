@@ -4,37 +4,36 @@
 
 <style>
 
-    body {
-        background-image: url('img/fondo.jpg');
+    .fondo {
+        background-image: url('img/Fondo.jpg');
         background-size: cover;
-        background-position: center;
-        margin: 0;
-        padding: 0;
     }
 
-    .text-container {
-        max-width: 400px;
-        float: right;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        height: 61vh;
+    [data-bs-theme="dark"] .fondo {
+        background-image: url('img/FondoOscuro.jpg');
     }
 
     p {
         font-family: 'Open Sans', sans-serif;
-        font-size: 20px;
+        font-size: 1.5em;
         font-style: italic;
     }
 
 </style>
 
-<body>
-    <div>
-        <h1 class="display-4">Bienvenido [Usuario]</h1>
-    </div>
 
-    <div class="text-container">
-        <p>¡Que bueno verte! Aquí encontrarás toda la información relevante de manera clara y concisa. Esperamos que este sistema de visualización te ayude a  tomar decisiones informadas y a gestionar tus actividades de manera más  eficiente. ¡Que disfrutes explorando!</p>
+<div class="container-fluid fondo min-h-100 d-flex">
+    <div class="col">
+        <div class="row">
+            <div class="text-center my-3">
+                <h1 class="display-4">Bienvenido [Usuario]</h1>
+            </div>         
+        </div>
+        <div class="d-flex align-items-center h-400px">
+            <div class="col-md-6 col-lg-4 offset-md-6 ">
+                <p class="text-center">¡Que bueno verte! Aquí encontrarás toda la información relevante de manera clara y concisa. Esperamos que este sistema de visualización te ayude a tomar decisiones informadas y a gestionar tus actividades de manera más eficiente. ¡Que disfrutes explorando!</p>
+            </div>
+        </div>
     </div>
-</body>
+    
+</div>
