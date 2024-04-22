@@ -1,12 +1,19 @@
-﻿<div class="d-lg-flex justify-content-between d-md-flex justify-content-between d-sm-block align-items-center">
-    <div class="my-2">
+﻿@{
+    var currentPage = Context.Request.Path.ToString();
+}
+
+<div class="d-lg-flex justify-content-between d-md-flex justify-content-between d-sm-block align-items-center">
+    <div class="my-2 col-md-3 col-sm-12">
         <h2 class="mb-0">@ViewData["Title"]</h2>
     </div>
     <div class="my-2 d-flex justify-content-around col-md-5 col-sm-12 m-auto">
-        <a class="btn btn-link" asp-controller="Home" asp-action="Dashboard">Total</a>
-        <a class="btn btn-link" asp-controller="Home" asp-action="DashboardSemanal">Semanal</a>
-        <a class="btn btn-link" asp-controller="Home" asp-action="DashboardMensual">Mensual</a>
-        <a class="btn btn-link" asp-controller="Home" asp-action="DashboardAnual">Anual</a>
+        <a class="btn btn-link @(currentPage == "/Home/Dashboard" ? "active" : "")" asp-controller="Home" asp-action="Dashboard">General</a>
+
+        <a class="btn btn-link @(currentPage.StartsWith("/Home/DashboardSemanal") ? "active" : "")" asp-controller="Home" asp-action="DashboardSemanal">Semanal</a>
+
+        <a class="btn btn-link @(currentPage.StartsWith("/Home/DashboardMensual") ? "active" : "")" asp-controller="Home" asp-action="DashboardMensual">Mensual</a>
+
+        <a class="btn btn-link @(currentPage.StartsWith("/Home/DashboardAnual") ? "active" : "")" asp-controller="Home" asp-action="DashboardAnual">Anual</a>
     </div>
     <div class="my-2 d-flex justify-content-around col-md-1 col-sm-3 m-auto">
         <i class="ki-outline ki-arrows-loop fs-1"></i>

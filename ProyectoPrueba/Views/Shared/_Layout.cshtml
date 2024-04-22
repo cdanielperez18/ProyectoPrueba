@@ -1,9 +1,14 @@
-﻿<!DOCTYPE html>
+﻿@{
+    var currentPage = Context.Request.Path.ToString();
+}
+
+
+<!DOCTYPE html>
 <html lang="en">
 <!-- Inicio del documento HTML -->
 <head>
     <!-- Cabecera del documento -->
-    <title>@ViewData["Title"] - ProyectoPrueba</title>
+    <title>@ViewData["Title"] - Tablero BI</title>
     <!-- Título de la página -->
     <meta charset="utf-8" />
     <!-- Configuración de la codificación de caracteres -->
@@ -105,7 +110,7 @@
                         <!-- Fin del alternador de móvil -->
                         <!-- Imagen del logo -->
                         <a asp-controller="Home" asp-action="Index">
-                            <img alt="Logo" src="~/img/logo.png" class="w-100px" />
+                            <img alt="Logo" src="~/img/Logo.png" class="w-70px h-40px" />
                         </a>
                         <!-- Fin de la imagen del logo -->
                     </div>
@@ -195,8 +200,6 @@
                                 <!-- Fin de menú de notificaciones -->
                             </div>
                             <!-- Fin de notificaciones -->
-
-
                             <!-- Menú de usuario -->
                             <div class="app-navbar-item ms-3 ms-md-6" id="kt_header_user_menu_toggle">
                                 <!-- Envoltorio del menú -->
@@ -333,10 +336,9 @@
                             <!-- Navegación -->
                             <ul class="nav">
                                 <!-- Elemento de la barra de navegación -->
-
                                 <li class="nav-item py-1">
                                     <!-- Enlace de la barra de navegación - Inicio -->
-                                    <a asp-controller="Home" asp-action="Index" class="nav-link py-4 px-1 btn">
+                                    <a asp-controller="Home" asp-action="Index" class="nav-link py-4 px-1 btn @(currentPage == "/" ? "active" : "")">
                                         <i class="ki-outline ki-home fs-1"></i>
                                         <span class="pt-2 fs-9 fs-lg-7 fw-bold">Inicio</span>
                                     </a>
@@ -347,8 +349,7 @@
                                 <!-- Elemento de la barra de navegación -->
                                 <li class="nav-item py-1">
                                     <!-- Enlace de la barra de navegación - Dashboard -->
-                                    <a asp-controller="Home" asp-action="Dashboard" class="nav-link py-4 px-1 btn" tabindex="-1">
-
+                                    <a asp-controller="Home" asp-action="Dashboard" class="nav-link py-4 px-1 btn @(currentPage.StartsWith("/Home/Dashboard") ? "active" : "")" tabindex="-1">
                                         <i class="ki-outline ki-chart-simple-3 fs-1"></i>
                                         <span class="pt-2 fs-9 fs-lg-7 fw-bold">Dashboard</span>
                                     </a>
@@ -359,7 +360,7 @@
                                 <!-- Elemento de la barra de navegación -->
                                 <li class="nav-item py-1">
                                     <!-- Enlace de la barra de navegación - Perfil -->
-                                    <a hasp-controller="Home" asp-action="Perfil" class="nav-link py-4 px-1 btn">
+                                    <a asp-controller="Home" asp-action="Perfil" class="nav-link py-4 px-1 btn @(currentPage.StartsWith("/Home/Perfil") ? "active" : "")">
                                         <i class="ki-outline ki-profile-circle fs-1"></i>
                                         <span class="pt-2 fs-9 fs-lg-7 fw-bold">Perfil</span>
                                     </a>
@@ -369,8 +370,8 @@
                                 <!-- Elemento de la barra de navegación -->
                                 <li class="nav-item py-1">
                                     <!-- Enlace de la barra de navegación - Configuración -->
-                                    <a asp-controller="Home" asp-action="Configuración"
-                                       class="nav-link py-4 px-1 btn">
+                                    <a asp-controller="Home" asp-action="Configuracion"
+                                       class="nav-link py-4 px-1 btn @(currentPage.StartsWith("/Home/Configuracion") ? "active" : "")">
                                         <i class="ki-outline ki-setting-2 fs-1"></i>
                                         <span class="pt-2 fs-9 fs-lg-7 fw-bold">Configuración</span>
                                     </a>
@@ -391,6 +392,7 @@
                             </ul>
                             <!-- Fin de la navegación -->
                         </div>
+
                         <!-- Fin de la navbar de la barra lateral -->
                     </div>
                     <!-- Fin de la barra lateral primaria -->
@@ -417,7 +419,7 @@
 
                         <div id="kt_app_footer" class="app-footer">
                             <!--begin::Footer container-->
-                            <div class="app-container container-fluid d-flex flex-column flex-md-row flex-center flex-md-stack py-3">
+                            <div class="app-container container-fluid d-flex flex-column flex-md-row flex-center flex-md-stack py-1">
                                 <!--begin::Copyright-->
                                 <div class="text-gray-900 order-2 order-md-1">
                                     <span class="text-muted fw-semibold me-1">
