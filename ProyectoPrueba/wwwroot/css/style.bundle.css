@@ -60075,8 +60075,8 @@ body {
 
 @media (min-width:992px) {
     :root {
-        --bs-app-header-height: 80px;
-        --bs-app-header-height-actual: 80px
+        --bs-app-header-height: 60px;
+        --bs-app-header-height-actual: 60px
     }
 
     [data-kt-app-header-fixed=true][data-kt-app-header-stacked=true] {
@@ -60085,8 +60085,8 @@ body {
     }
 
     [data-kt-app-header-sticky=on] {
-        --bs-app-header-height: 70px;
-        --bs-app-header-height-actual: 80px
+        --bs-app-header-height: 60px;
+        --bs-app-header-height-actual: 60px
     }
 
     [data-kt-app-header-sticky=on][data-kt-app-header-stacked=true] {
@@ -60095,7 +60095,7 @@ body {
     }
 
     [data-kt-app-header-minimize=on] {
-        --bs-app-header-height: 70px
+        --bs-app-header-height: 60px
     }
 
     .app-header {

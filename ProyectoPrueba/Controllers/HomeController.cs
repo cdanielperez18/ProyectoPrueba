@@ -18,29 +18,33 @@ namespace ProyectoPrueba.Controllers
             return View();
         }
 
-        public IActionResult Configuración()
+        public IActionResult Configuracion()
         {
             return View();
         }
 
         public IActionResult Dashboard()
         {
-            return View();
+			ViewBag.NumeroTarjeta = 111;
+			return View();
         }
 
         public IActionResult DashboardAnual()
         {
-            return View();
+			ViewBag.NumeroTarjeta = 999;
+			return View();
         }
 
         public IActionResult DashboardMensual()
         {
-            return View();
+			ViewBag.NumeroTarjeta = 222;
+			return View();
         }
 
         public IActionResult DashboardSemanal()
         {
-            return View();
+			ViewBag.NumeroTarjeta = 777;
+			return View();
         }
 
         public IActionResult Perfil()
@@ -54,7 +58,8 @@ namespace ProyectoPrueba.Controllers
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+
+		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
