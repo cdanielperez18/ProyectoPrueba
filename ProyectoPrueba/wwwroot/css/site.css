@@ -13,11 +13,10 @@
         overflow-y: hidden;
         overflow-x: hidden;
     }
-
 }
 
 .app-sidebar-primary .app-sidebar-nav {
-    border:none;
+    border: none;
 }
 
 
@@ -28,3 +27,45 @@
         border-bottom-right-radius: 20%;
     }
 }
+
+/* Perfil */
+.card-custom {
+    background-color: #fff;
+    padding: 1.5rem;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .1);
+    margin-bottom: 24px;
+    border-radius: .25rem;
+}
+
+.nav-pills {
+    --bs-nav-pills-border-radius: var(--bs-border-radius);
+    --bs-nav-pills-link-active-color: #ffffff;
+    --bs-nav-pills-link-active-bg: #092F60;
+}
+
+.custom-heading {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 24px;
+    padding: 12px;
+    background-color: #f1f5f7;
+    border-radius: 4px;
+}
+
+.custom-heading i {
+    color: #fff;
+    background-color: #092F60;
+    border-radius: 4px 4px 4px 2px;
+    margin-right: 8px;
+    padding: 3px;
+}
+
+.custom-heading span {
+    font-size: 12px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
