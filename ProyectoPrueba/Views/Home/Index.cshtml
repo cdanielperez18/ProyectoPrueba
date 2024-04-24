@@ -4,12 +4,14 @@
 
 <style>
 
-    .fondo {
+    body {
         background-image: url('img/Fondo.jpg');
         background-size: cover;
+        background-attachment: fixed !important;
+        background-repeat:no-repeat !important;
     }
 
-    [data-bs-theme="dark"] .fondo {
+    [data-bs-theme="dark"] body {
         background-image: url('img/FondoOscuro.jpg');
     }
 
@@ -22,7 +24,7 @@
 </style>
 
 
-<div class="container-fluid fondo min-h-100 d-flex">
+<div class="container-fluid body min-h-100 d-flex">
     <div class="col">
         <div class="row">
             <div class="text-center my-3">
@@ -35,5 +37,4 @@
             </div>
         </div>
     </div>
-    
 </div>

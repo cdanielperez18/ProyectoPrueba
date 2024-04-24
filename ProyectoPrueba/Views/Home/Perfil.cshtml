@@ -2,192 +2,109 @@
     ViewData["Title"] = "Perfil";
 }
 
-<style>
-    /* Estilos CSS */
-    .card-box {
-        background-color: #fff;
-        padding: 1.5rem;
-        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .1);
-        margin-bottom: 24px;
-        border-radius: .25rem;
-    }
-
-    .nav-pills {
-        --bs-nav-pills-border-radius: var(--bs-border-radius);
-        --bs-nav-pills-link-active-color: #ffffff;
-        --bs-nav-pills-link-active-bg: #092F60;
-    }
-
-    .bg-light {
-        background-color: #f1f5f7 !important;
-    }
-
-    .form-group {
-        margin-bottom: 1rem;
-    }
-
-    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-        margin: 10px 0;
-        font-family: Poppins, sans-serif;
-        color: #343a40;
-    }
-
-    .text-right {
-        text-align: right !important;
-    }
-
-    .btn-custom {
-        background-color: #092F60;
-        border-color: #092F60;
-        color: #fff;
-    }
-
-    .btn-custom:hover,
-    .btn-custom:focus {
-        background-color: #071f45;
-        border-color: #071f45;
-        color: #fff;
-    }
-
-    .custom-heading {
-        display: flex;
-        align-items: center;
-        text-align: left;
-        margin-bottom: 24px;
-        padding: 12px;
-        background-color: #f1f5f7;
-        border-radius: 4px;
-    }
-
-    .custom-heading i {
-        color: #fff;
-        background-color: #092F60;
-        border-radius: 4px 4px 4px 2px;
-        margin-right: 8px;
-        padding: 3px;
-    }
-
-    .custom-heading span {
-        font-size: 12px;
-    }
-
-</style>
-
-<div class="content">
-    <!-- Start Content-->
-    <div class="container-fluid">
-        <!-- start page title -->
-        <div class="row">
-            <div class="col-12">
-                <div class="page-title-box mx-3">
-                    <h2 class="page-title fw-bold">Perfil de Usuario</h2>
-                </div>
+<!-- Start Content-->
+<div class="container-fluid">
+    <!-- start page title -->
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box mx-3">
+                <h2 class="page-title fw-bold">Perfil de Usuario</h2>
             </div>
         </div>
-        <!-- end page title -->
-
-        <div class="row">
-            <div class="col-lg-8 col-xl-8">
-                <div class="card-box">
-                    <ul class="nav nav-pills navtab-bg nav-justified">
-                        <li class="nav-item">
-                            <a href="#" data-toggle="tab" aria-expanded="false" class="nav-link active" onclick="return false;" style="font-weight: 600;">
-                                Información personal
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <br>
-                        <div class="tab-pane show active" id="settings">
-                            <form id="demo-form2" data-parsley-validate="" class="form-horizontal form-label-left" asp-controller="Home" asp-action="Index" method="post">
-                                <div class="row">
-                                    <!--begin::Input group-->
-                                    <div class="col-md-6">
-                                        <div class="form-group d-flex flex-column align-items-center">
-                                            <!--begin::Label-->
-                                            <label class="col-lg-4 col-form-label fw-semibold fs-6 text-center">NIT</label>
-                                            <!--end::Label-->
-                                            <!--begin::Col-->
-                                            <div class="col-lg-8 fv-row fv-plugins-icon-container">
-                                                <input type="text" name="nit" class="form-control form-control-lg form-control-solid" placeholder="NIT" value="1034204532">
-                                                <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div>
-                                            </div>
-                                            <!--end::Col-->
+    </div>
+    <!-- end page title -->
+    <div class="row">
+        <div class="col-lg-8 col-xl-8">
+            <div class="card-custom">
+                <ul class="nav nav-pills navtab-bg nav-justified">
+                    <li class="nav-item">
+                        <a href="#" data-toggle="tab" aria-expanded="false" class="nav-link active" onclick="return false;" style="font-weight: 600;">
+                            Información personal
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <br>
+                    <div class="tab-pane show active" id="settings">
+                        <form id="demo-form2" data-parsley-validate="" class="form-horizontal form-label-left" asp-controller="Home" asp-action="Index" method="post">
+                            <div class="row">
+                                <!--begin::Input group-->
+                                <div class="col-md-6">
+                                    <div class="form-group d-flex flex-column align-items-center">
+                                        <!--begin::Label-->
+                                        <label class="col-lg-4 col-form-label fw-semibold fs-6 text-center">NIT</label>
+                                        <!--end::Label-->
+                                        <!--begin::Col-->
+                                        <div class="col-lg-8 fv-row fv-plugins-icon-container">
+                                            <input type="text" name="nit" class="form-control form-control-lg form-control-solid" placeholder="NIT" value="1034204532">
+                                            <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div>
                                         </div>
-                                    </div>
-                                    <!--end::Input group-->
-                                    <!--begin::Input group-->
-                                    <div class="col-md-6">
-                                        <div class="form-group d-flex flex-column align-items-center">
-                                            <!--begin::Label-->
-                                            <label class="col-lg-4 col-form-label fw-semibold fs-6 text-center">Nombre</label>
-                                            <!--end::Label-->
-                                            <!--begin::Col-->
-                                            <div class="col-lg-8 fv-row fv-plugins-icon-container">
-                                                <input type="text" name="nombre" class="form-control form-control-lg form-control-solid" placeholder="Nombre" value="AndresitoMor">
-                                                <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div>
-                                            </div>
-                                            <!--end::Col-->
-                                        </div>
+                                        <!--end::Col-->
                                     </div>
                                 </div>
-                                <h5 class="custom-heading text-uppercase">
-                                    <i class="ki-outline ki-message-edit fs-4"></i> <span>Cambiar contraseña</span>
-                                </h5>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label for="password">Contraseña antigua</label>
-                                            <input type="text" class="form-control" id="password" name="password" placeholder="********">
+                                <!--end::Input group-->
+                                <!--begin::Input group-->
+                                <div class="col-md-6">
+                                    <div class="form-group d-flex flex-column align-items-center">
+                                        <!--begin::Label-->
+                                        <label class="col-lg-4 col-form-label fw-semibold fs-6 text-center">Nombre</label>
+                                        <!--end::Label-->
+                                        <!--begin::Col-->
+                                        <div class="col-lg-8 fv-row fv-plugins-icon-container">
+                                            <input type="text" name="nombre" class="form-control form-control-lg form-control-solid" placeholder="Nombre" value="AndresitoMor">
+                                            <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div>
                                         </div>
+                                        <!--end::Col-->
                                     </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label for="new_password">Nueva contraseña</label>
-                                            <input type="text" class="form-control" name="new_password" id="new_password" placeholder="">
-                                        </div>
-                                    </div> <!-- end col -->
-
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label for="confirm_new_password">Confirmar contraseña nueva</label>
-                                            <input type="text" class="form-control" id="confirm_new_password" name="confirm_new_password" placeholder="">
-                                        </div>
-                                    </div> <!-- end col -->
-                                </div> <!-- end row -->
-
-                                <div class="form-group" style="text-align: left;">
-                                    <label class="control-label col-md-5 col-sm-5 col-xs-12" style="text-align: left;">
-                                        <input type="checkbox" class="flat" name="status" checked=""> Activo
-                                    </label>
-
                                 </div>
-                                <p class="text-muted text-right">Si desactivas tu cuenta, no podras tener acceso</p>
-                                <div class="text-right">
-                                    <button type="submit" class="btn btn-custom waves-effect waves-light mt-2" name="token">
-                                        <i class="mdi mdi-content-save"></i> Actualizar datos
-                                    </button>
+                            </div>
+                            <h5 class="custom-heading text-uppercase">
+                                <i class="ki-outline ki-message-edit fs-4"></i> <span>Cambiar contraseña</span>
+                            </h5>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="password">Contraseña antigua</label>
+                                        <input type="text" class="form-control" id="password" name="password" placeholder="********">
+                                    </div>
                                 </div>
-                            </form>
-                        </div>
-                        <!-- end settings content-->
-                    </div> <!-- end tab-content -->
-                </div> <!-- end card-box-->
-            </div> <!-- end col -->
-            <div class="col-lg-4 col-xl-4 align-self-center">
-                <div class="card-box d-flex flex-column justify-content-center align-items-center text-center">
-                    <div id="respuesta" style="width: 150px; height: 150px; overflow: hidden; border-radius: 50%; margin-bottom: 20px;">
-                        <img class="thumb-image" style="width: 100%; height: auto; border-radius: 50%;" src="~/img/300-1.jpg" alt="image">
-                    </div>
-                    <span class="btn btn-my-button btn-file">
-                        <form method="post" id="formulario" enctype="multipart/form-data">
-                            Cambiar Imagen de perfil: <input type="file" name="file" class="form-control">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="new_password">Nueva contraseña</label>
+                                        <input type="text" class="form-control" name="new_password" id="new_password" placeholder="">
+                                    </div>
+                                </div> <!-- end col -->
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="confirm_new_password">Confirmar contraseña nueva</label>
+                                        <input type="text" class="form-control" id="confirm_new_password" name="confirm_new_password" placeholder="">
+                                    </div>
+                                </div> <!-- end col -->
+                            </div> <!-- end row -->
+                            <div class="text-end">
+                                <button type="submit" class="btn text-white" style="background-color: #092F60;">
+                                    Actualizar datos
+                                </button>
+                            </div>
                         </form>
-                    </span>
-                </div> <!-- end card-box -->
-            </div> <!-- end col-->
-
-        </div>
-        <!-- end row-->
-    </div> <!-- container -->
-</div>
+                    </div>
+                    <!-- end settings content-->
+                </div> <!-- end tab-content -->
+            </div> <!-- end card-box-->
+        </div> <!-- end col -->
+        <div class="col-lg-4 col-xl-4 align-self-center">
+            <div class="card-custom d-flex flex-column justify-content-center align-items-center text-center">
+                <div id="respuesta" style="width: 150px; height: 150px; overflow: hidden; border-radius: 50%; margin-bottom: 20px;">
+                    <img class="thumb-image" style="width: 100%; height: auto; border-radius: 50%;" src="~/img/300-1.jpg" alt="image">
+                </div>
+                <span class="btn btn-my-button btn-file">
+                    <form method="post" id="formulario" enctype="multipart/form-data">
+                        Cambiar Imagen de perfil: <input type="file" name="file" class="form-control">
+                    </form>
+                </span>
+            </div> <!-- end card-box -->
+        </div> <!-- end col-->
+    </div>
+    <!-- end row-->
+</div> <!-- container -->
